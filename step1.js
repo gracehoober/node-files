@@ -1,14 +1,16 @@
-const fsP = require('fs/promises')
+"use strict";
 
-const path = process.argv[2]
+const fsP = require('fs/promises');
+
+const path = process.argv[2];
 
 async function cat(path){
   try{
-    let contents = await fsP.readFile(path, "utf8")
-    console.log(contents)
+    let contents = await fsP.readFile(path, "utf8");
+    console.log(contents);
   }catch(err){
-    console.log(err)
-    process.exit(1)
+    console.log(err);
+    process.exit(1);
   }
 }
 

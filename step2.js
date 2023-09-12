@@ -1,3 +1,5 @@
+"use strict";
+
 const fsP = require('fs/promises')
 
 const path = process.argv[2]
