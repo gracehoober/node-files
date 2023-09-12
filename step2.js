@@ -28,7 +28,6 @@ async function webCat(url){
   }
 }
 
-
 function isURL(path){
   //console.debug("isURL")
   try{
